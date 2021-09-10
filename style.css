@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background: rgb(24, 155, 169);
+    height: 100vh;
+    display: relative;
+
+}
+.bg-top {
+    background-image: url(images/bg-pattern-top.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 50vw;
+    background-position: right bottom;
+}
+
+.bg-bottom {
+    background-image: url(images/bg-pattern-bottom.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+}

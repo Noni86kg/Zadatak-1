@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background: rgb(24, 155, 169);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.card {
+    width: 25vw;
+    background-color: white;
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 0px 40px 80px 20px rgba(0, 0, 0, .2);
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.bg-card {
+    background-image: url(images/bg-pattern-card.svg);
+    height: 20vh;
+    border-radius: 15px 15px 0px 0px;
+}
+.card img {
+    display: block;
+    width: 20vh;
+    margin: 0px auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    top: -10vh;
+}
+.card .text {
+    position: relative;
+    top: -5vh;
+    text-align: center;
+}
+.card .text h2 {
+    margin-bottom: 10px;
+}
+.card .text span ,
+.card .text h4,
+.card .numbers h5 {
+    color: gray;
+    font-weight: 500;
+}
+.card .numbers h5 {
+    letter-spacing: 2px;
+}
+.card .numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 25px 0;
+    border-top: lightgray solid 1px;
+}
+.bg-top {
+    background-image: url(images/bg-pattern-top.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 50vw;
+    background-position: right bottom;
+}
+.bg-bottom {
+    background-image: url(images/bg-pattern-bottom.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+/* responsive */
+@media (min-width: 1367px) {
+    .bg-top {
+        top: -250px;
+        height: 80vh;
+        width: 48vw;
+    }
+    .bg-bottom {
+        width: 45vw;
+    }
+    .bg-card  {
+        height: 18vh;
+    }
+}
+@media(max-width: 767px) {
+    .bg-bottom {
+        height: 60vh;
+    }
+    .card {
+        width: 85vw;
+    }
+    .card img {
+        width: 20vh;
+        top: -10vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        width: 60vw;
+    }
+    .card img {
+        width: 20vh;
+        top: -10vh;
+    }
+    .card .text h2,
+    .card .numbers h2 {
+        font-size: 2rem;
+    }
+    .card .text h4,
+    .card .numbers h5 {
+        font-size: 1.1rem;
+    }
+}
+@media(max-height: 500px) {
+    .card img {
+        width: 20vh;
+        top: -10vh;
+    }
+} 
+@media(max-height: 300px) {
+    .card img {
+        width: 16vh;
+        top: -8vh;
+    }
+} 

@@ -17,24 +17,29 @@ body {
     background-color: white;
     z-index: 2;
     border-radius: 15px;
+    box-shadow: 0px 40px 80px 20px rgba(0, 0, 0, .2);
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 .bg-card {
     background-image: url(images/bg-pattern-card.svg);
-    height: 23vh;
+    height: 20vh;
     border-radius: 15px 15px 0px 0px;
 }
 .card img {
     display: block;
-    width: 8vw;
+    width: 20vh;
     margin: 0px auto;
     border-radius: 50%;
     border: 5px solid white;
     position: relative;
-    top: -4vw;
+    top: -10vh;
 }
 .card .text {
     position: relative;
-    top: -2vw;
+    top: -5vh;
     text-align: center;
 }
 .card .text h2 {
@@ -102,11 +107,8 @@ body {
         width: 85vw;
     }
     .card img {
-        width: 32vw;
-        top: -16vw;
-    }
-    .card .text {
-        top: -8vw;
+        width: 20vh;
+        top: -10vh;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -114,11 +116,8 @@ body {
         width: 60vw;
     }
     .card img {
-        width: 32vw;
-        top: -16vw;
-    }
-    .card .text {
-        top: -8vw;
+        width: 20vh;
+        top: -10vh;
     }
     .card .text h2,
     .card .numbers h2 {
@@ -129,3 +128,15 @@ body {
         font-size: 1.1rem;
     }
 }
+@media(max-height: 500px) {
+    .card img {
+        width: 20vh;
+        top: -10vh;
+    }
+} 
+@media(max-height: 300px) {
+    .card img {
+        width: 16vh;
+        top: -8vh;
+    }
+} 
